@@ -1,7 +1,13 @@
 const config = require('./config.json');
+const aws = require('aws-sdk');
+let s3 = new aws.S3({
+    discordToken: process.env.DISCORD_TOKEN
+});
 const Discord = require("discord.js");
 const client = new Discord.Client();
 const prefix = config.prefix;
+
+
 
 client.on("ready", () => {
     console.log("bot ready");
@@ -132,4 +138,4 @@ function extension(reaction, attachment) {
     return attachment;
   }
 
-client.login(config.token)
+client.login(s3.discordToken)
