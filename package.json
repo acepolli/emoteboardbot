@@ -1,0 +1,31 @@
+{
+  "name": "emoteboardbot",
+  "version": "1.0.0",
+  "description": "discord bot that adds messages with a given react to a smugboard",
+  "main": "emotebot.js",
+  "engines": {
+    "node": "14.15.0",
+    "npm": "6.14.8"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node emotebot.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/acepolli/emoteboardbot.git"
+  },
+  "keywords": [
+    "heroku",
+    "discord.js"
+  ],
+  "author": "andycepi",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/acepolli/emoteboardbot/issues"
+  },
+  "homepage": "https://github.com/acepolli/emoteboardbot#readme",
+  "dependencies": {
+    "discord.js": "^12.5.1"
+  }
+}
