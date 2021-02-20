@@ -7,7 +7,7 @@ const Discord = require("discord.js");
 const client = new Discord.Client();
 const prefix = config.prefix;
 
-
+console.log(s3.discordToken);
 
 client.on("ready", () => {
     console.log("bot ready");
